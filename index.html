@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/index.min.css">
+
+<body>
+    <div id="treebox" class="treebox clearfix"></div>
+</body>
+
+<script src="./js/jquery.min.js" type="text/javascript"></script>
+<script src="./js/bootstrap.min.js" type="text/javascript"></script>
+<script src="./js/jquery.treeselect.js" type="text/javascript"></script>
+<script type="text/javascript">
+var treedata = 
+[{
+    id : 1,
+    pid : 0,
+    text: "Parent 1",
+    checked: false,
+    jsondata: {a:"1",b:"2"},
+    nodes: [{
+        id : 6,
+        pid : 1,
+        text: "Child 1",
+        checked: false,
+        jsondata: {a:"1",b:"2"},
+        nodes: [{
+            id: 7,
+            pid:6,
+            checked: false,
+            text: "Grandchild 1",
+            jsondata: {a:"1",b:"2"},
+            nodes: [{
+                id: 12,
+                pid:7,
+                checked: false,
+                text: "GreatGrandchild 1",
+                jsondata: {a:"1",b:"2"},
+            },{
+                id:13,
+                pid:7,
+                checked: false,
+                jsondata: {a:"1",b:"2"},
+                text: "GreatGrandchild 2",
+            }]
+        },{
+            id:8,
+            pid:6,
+            checked: false,
+            jsondata: {a:"1",b:"2"},
+            text: "Grandchild 2",
+        }]
+    },{
+        id : 9,
+        pid : 1,
+        checked: false,
+        text: "Child 2",jsondata: {a:"1",b:"2"},
+        nodes: [{
+            id: 10,
+            pid : 9,
+            checked: false,
+            text: "Grandchild 3",
+            jsondata: {a:"1",b:"2"}
+        },{
+            id : 11,
+            pid : 9,
+            checked: false,
+            jsondata: {a:"1",b:"2"},
+            text: "Grandchild 4"
+        }]
+    }]
+},{
+    id:2,
+    pid : 0,
+    checked: false,
+    text: "Parent 2",
+    jsondata: {a:"1",b:"2"},
+},{
+    id:3,
+    pid : 0,
+    checked: false,
+    text: "Parent 3",
+    jsondata: {a:"1",b:"2"},
+    nodes: [{
+        id : 26,
+        pid : 3,
+        text: "Child 1",
+        checked: false,
+        jsondata: {a:"1",b:"2"},
+        nodes: [{
+            id: 27,
+            pid:26,
+            checked: false,
+            text: "Grandchild 1",
+            jsondata: {a:"1",b:"2"},
+            nodes: [{
+                id: 32,
+                pid:27,
+                checked: false,
+                text: "GreatGrandchild 1",
+                jsondata: {a:"1",b:"2"},
+            },{
+                id:33,
+                pid:27,
+                checked: false,
+                jsondata: {a:"1",b:"2"},
+                text: "GreatGrandchild 2",
+            }]
+        },{
+            id:28,
+            pid:26,
+            checked: false,
+            jsondata: {a:"1",b:"2"},
+            text: "Grandchild 2",
+        }]
+    },{
+        id : 29,
+        pid : 3,
+        checked: false,
+        text: "Child 2",jsondata: {a:"1",b:"2"},
+        nodes: [{
+            id: 30,
+            pid : 29,
+            checked: false,
+            text: "Grandchild 3",
+            jsondata: {a:"1",b:"2"}
+        },{
+            id : 31,
+            pid : 29,
+            checked: false,
+            jsondata: {a:"1",b:"2"},
+            text: "Grandchild 4"
+        }]
+    }]
+},{
+    id:4,
+    pid : 0,
+    checked: false,
+    text: "Parent 4",
+    jsondata: {a:"1",b:"2"},
+},{
+    id:5,
+    pid : 0,
+    checked: false,
+    text: "Parent 5",
+    jsondata: {a:"1",b:"2"},
+}];
+jQuery(document).ready(function($) {
+    $('#treebox').njTree(treedata);
+
+});
+</script>
+</html>

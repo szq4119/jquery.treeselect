@@ -1,0 +1,168 @@
+body {
+  font-size: 12px; }
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, select, textarea, th, td, span {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%; }
+
+ul, ol, li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  cursor: pointer; }
+
+a:hover {
+  text-decoration: none; }
+
+fieldset, img {
+  border: 0; }
+
+button, input, select, textarea {
+  font-size: 100%;
+  outline: none; }
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  line-height: 0;
+  clear: both;
+  visibility: hidden;
+  font-size: 0; }
+
+.clearfix {
+  *zoom: 1; }
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+
+.fl {
+  float: left;
+  display: inline; }
+
+.fr {
+  float: right;
+  display: inline; }
+
+.dn {
+  display: none; }
+
+.modal-dialog {
+  width: 100% !important; }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("./iconfont/iconfont.eot");
+  /* IE9*/
+  src: url("./iconfont/iconfont.eot?#iefix") format("embedded-opentype"), url("./iconfont/iconfont.woff") format("woff"), url("./iconfont/iconfont.ttf") format("truetype"), url("./iconfont/iconfont.svg#iconfont") format("svg");
+  /* iOS 4.1- */ }
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+body {
+  font-size: 12px; }
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, select, textarea, th, td, span {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%; }
+
+ul, ol, li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  cursor: pointer; }
+
+a:hover {
+  text-decoration: none; }
+
+fieldset, img {
+  border: 0; }
+
+button, input, select, textarea {
+  font-size: 100%;
+  outline: none; }
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  line-height: 0;
+  clear: both;
+  visibility: hidden;
+  font-size: 0; }
+
+.clearfix {
+  *zoom: 1; }
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+
+.fl {
+  float: left;
+  display: inline; }
+
+.fr {
+  float: right;
+  display: inline; }
+
+
+
+.treebox {
+  border: 1px solid #eee;
+  padding: 10px 0; }
+  .treebox #treelist {
+    width: 59%;
+    float: left; }
+    .treebox #treelist ul {
+      margin-left: 20px; }
+      .treebox #treelist ul li {
+        line-height: 30px;
+        font-size: 14px;
+        background: url(treecheck1.png) 0 6px no-repeat;
+        padding-left: 20px; }
+        .treebox #treelist ul li .icheckbox_minimal-grey {
+          margin-right: 4px; }
+      .treebox #treelist ul li:hover {
+        background: url(treecheck2.png) 0 6px no-repeat; }
+      .treebox #treelist ul li.checked {
+        background: url(treecheck3.png) 0 6px no-repeat; }
+  .treebox #treeselect {
+    width: 39%;
+    float: right; }
+    .treebox #treeselect li {
+      position: relative; }
+      .treebox #treeselect li p {
+        line-height: 26px;
+        position: relative;
+        padding: 0 10px;
+        background: #eee;
+        border-bottom: 1px solid #fff; }
+      .treebox #treeselect li a {
+        font-size: 20px;
+        position: absolute;
+        top: -2px;
+        right: 10px; }
+
